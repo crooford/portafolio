@@ -1,0 +1,93 @@
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth ;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 40px;
+}
+
+.header-nav{
+    box-shadow: 0px 4px 5px rgba(0, 0,0,.2);
+    position: fixed;
+    background-color: #f4f4f4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.navbar-menu{
+    height: 55px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.marca{
+    color: #17B890;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 60px;
+    
+    
+}
+.menu-item{
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    padding: 0 60px;
+    margin: 0;
+    
+}
+
+.menu-item li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu-item li a {
+    padding: 13px 13px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+   
+}
+.menu-item li:hover{
+    background-color: rgba(0, 0,0,.1);
+    transition: .4s;
+}
+
+.container-profile-pd{
+    padding-left: 25px;
+    padding-right: 25px;
+    scroll-margin-top: 7ex;
+}
+.container-profile-vpd{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    scroll-margin-top: 7ex;
+}
+@media (min-width: 950px){
+    .container-profile-pd{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .container-profile-vpd{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
